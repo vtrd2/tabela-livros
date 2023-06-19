@@ -8,7 +8,7 @@ function TabelaBody(props) {
             <td>{livro.titulo}</td>
             <td>{livro.autor}</td>
             <td>
-                <button className="botao remover">Remover</button>
+                <button className="botao remover" onClick={() => props.removerLinha(livro.id)} id={livro.id}>Remover</button>
             </td>
         </tr>
         ))}

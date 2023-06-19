@@ -1,11 +1,13 @@
 import React from 'react'
 
-const TabelaFoot = () => (
-    <tfoot>
-        <tr>
-            <td colSpan={4}>Este é o rodapé da Tabela</td>
-        </tr>
-    </tfoot>
-);
+function TabelaFoot(props) {
+    return (
+        <tfoot>
+            <tr>
+                <td colSpan={4}>Quantidade de livros na tabela: {props.qdeLivros}</td>
+            </tr>
+        </tfoot>
+    )
+};
 
 export default TabelaFoot
